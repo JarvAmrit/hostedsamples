@@ -22,6 +22,7 @@ container, and you have a ready-made conversational agent API — no code change
 - [Multi-Turn Conversations](#multi-turn-conversations)
 - [Project Structure](#project-structure)
 - [Building Locally](#building-locally)
+- 📖 **[Tool Call Samples →](docs/tool-samples.md)** — end-to-end `.env` + `curl` examples for every tool
 
 ---
 
@@ -110,6 +111,10 @@ TOOL_2_URL=https://mcp.example.com/sse
 ---
 
 ## Supported Tools
+
+> 📖 **Looking for complete examples?** See **[docs/tool-samples.md](docs/tool-samples.md)** for
+> copy-paste `.env` configurations and `curl` commands for every tool, including multi-turn
+> MCP conversations, header authentication, allowed-tool restrictions, and multi-tool recipes.
 
 ### `bing_grounding` – Bing Grounding Search
 
@@ -236,6 +241,8 @@ curl -X POST http://localhost:8080/api/chat \
 
 ```
 hostedsamples/
+├── docs/
+│   └── tool-samples.md                     # End-to-end samples for every tool (MCP, Bing, etc.)
 ├── src/
 │   └── HostedAgent/
 │       ├── HostedAgent.csproj              # .NET 9 web project
