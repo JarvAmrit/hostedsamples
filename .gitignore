@@ -1,0 +1,15 @@
+# Secrets – never commit your real .env
+.env
+
+# .NET build output
+bin/
+obj/
+publish/
+
+# Rider / VS
+.vs/
+.idea/
+*.user
+
+# Docker
+docker-compose.override.yml
